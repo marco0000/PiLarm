@@ -87,11 +87,9 @@ grab_cam = picamera.PiCamera()
 grab_cam.rotation = 180
 
 #INIZIALIZZO TEWWTPONY
-#CREDENZIALI GABBANESE
-#api = tweetpony.API(consumer_key = "fWda91GYGNa6RgE65fYznhhzQ", consumer_secret = "3qjueaXS4fRs1BacS0Zj37ioOeoXhmB6FZGJqBwY40tTLmMbSY", access_token = "756822972-C9li9zb358QGEW6nYEdaxVxm5v1RVNRCDJSMFvFH", access_token_secret = "pmtaRQSQHCQyFAT68wQADMFQB2CTOoLgtRAQ3v8Q8lNr4")
-#CREDENZIALI LoraMarco1
+#Twitter account
 try:
-	api = tweetpony.API(consumer_key = "Dz03dRqQeFpqSV8nfmVEzZvNl", consumer_secret = "hM9uQPU0RXfqXFPAYz5XagIM2ey484R4jMx80SUcTSB9viLK4n", access_token = "2730297008-wDRKtfP2YStutVP23hIs04fZRm1JTVFDgcbt93J", access_token_secret = "07ehHLAM6lcrT10D1WbBOzHZui5qbaufwxKBlzkcNzJIa")
+	api = tweetpony.API(consumer_key = "XXX", consumer_secret = "XXX", access_token = "XXX", access_token_secret = "XXX")
 	user = api.user
 except:
 	print "Ops, api not activated"
