@@ -10,7 +10,7 @@ def sendtwitt(text):
 	import tweetpony
 	
 	todays_date = datetime.datetime.today()
-	api = tweetpony.API(consumer_key = "Dz03dRqQeFpqSV8nfmVEzZvNl", consumer_secret = "hM9uQPU0RXfqXFPAYz5XagIM2ey484R4jMx80SUcTSB9viLK4n", access_token = "2730297008-wDRKtfP2YStutVP23hIs04fZRm1JTVFDgcbt93J", access_token_secret = "07ehHLAM6lcrT10D1WbBOzHZui5qbaufwxKBlzkcNzJIa")
+	api = tweetpony.API(consumer_key = "XXX", consumer_secret = "XXX", access_token = "XXX", access_token_secret = "XXX")
 
 	user = api.user
 
