@@ -54,10 +54,8 @@ def cleanfile(path):
 	fo.close()
 
 #INIZIALIZZO TEWWTPONY
-#CREDENZIALI GABBANESE
-api = tweetpony.API(consumer_key = "fWda91GYGNa6RgE65fYznhhzQ", consumer_secret = "3qjueaXS4fRs1BacS0Zj37ioOeoXhmB6FZGJqBwY40tTLmMbSY", access_token = "756822972-C9li9zb358QGEW6nYEdaxVxm5v1RVNRCDJSMFvFH", access_token_secret = "pmtaRQSQHCQyFAT68wQADMFQB2CTOoLgtRAQ3v8Q8lNr4")
-#CREDENZIALI LoraMarco1
-api = tweetpony.API(consumer_key = "Dz03dRqQeFpqSV8nfmVEzZvNl", consumer_secret = "hM9uQPU0RXfqXFPAYz5XagIM2ey484R4jMx80SUcTSB9viLK4n", access_token = "2730297008-wDRKtfP2YStutVP23hIs04fZRm1JTVFDgcbt93J", access_token_secret = "07ehHLAM6lcrT10D1WbBOzHZui5qbaufwxKBlzkcNzJIa")
+#TWITTER ACCOUNT
+api = tweetpony.API(consumer_key = "XXX", consumer_secret = "XXX", access_token = "XXX", access_token_secret = "XXX")
 user = api.user
 
 attempt = "0000"
@@ -128,14 +126,14 @@ class StreamProcessor(tweetpony.StreamProcessor):
 				subprocess.call("mpg123 /home/pi/PiLarm/shutdown.mp3", shell=True)
 				subprocess.call("halt", shell=True)
 			if sendlog in command:
-				print "sending log.txt file to m.andrenacci@gmail.com"
+				print "sending log.txt file to XXX@gmail.com"
 				todays_date = datetime.datetime.today()
-				sendmail( "sandroni.laura@gmail.com", todays_date.strftime('%d-%m-%y-%H:%M:%S')+ "PI-ALARM: log.txt", "PI-ALARM: log.txt", "/home/pi/PiLarm/log.txt")
-				print "E-mail sent to: " + "sandroni.laura@gmail.com"
+				sendmail( "XXX@gmail.com", todays_date.strftime('%d-%m-%y-%H:%M:%S')+ "PI-ALARM: log.txt", "PI-ALARM: log.txt", "/home/pi/PiLarm/log.txt")
+				print "E-mail sent to: " + "XXX@gmail.com"
 				log("LOGFILE SENT VIA E-MAIL TO: " + "sandroni.laura@gmail.com")
-				sendmail( "m.andrenacci@gmail.com", todays_date.strftime('%d-%m-%y-%H:%M:%S')+ "PI-ALARM: log.txt", "PI-ALARM: log.txt", "/home/pi/PiLarm/log.txt")
-				print "E-mail sent to: " + "m.andrenacci@gmail.com"
-				log("LOGFILE SENT VIA E-MAIL TO: " + "m.andrenacci@gmail.com")
+				sendmail( "XXX@gmail.com", todays_date.strftime('%d-%m-%y-%H:%M:%S')+ "PI-ALARM: log.txt", "PI-ALARM: log.txt", "/home/pi/PiLarm/log.txt")
+				print "E-mail sent to: " + "XXX"
+				log("LOGFILE SENT VIA E-MAIL TO: " + "XXX@gmail.com")
 			if sendstatus in command:
 				with open("/home/pi/PiLarm/armed.txt", "r+") as fo:
 					fo.seek(0, 0)
